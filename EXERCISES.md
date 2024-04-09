@@ -9,7 +9,7 @@ If an error occurs while deploying code (or if you just want to stop a deploymen
 ## Exercise 1: TMS API 
 In this exercise, an AWS Copilot [Load Balanced Web Service](https://aws.github.io/copilot-cli/docs/concepts/services/#load-balanced-web-service) for the _TMS API_ is created and deployed.
 
-A basic API server exists in `src/api` with the following endpoint defined to accept a content-request request in `src/api/routes.js`:
+A basic API server exists in `services/api` with the following endpoint defined to accept a content-request request in `src/routes.js`:
 
     POST  /content-request
     
