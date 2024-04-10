@@ -180,9 +180,9 @@ ECS load balancers efficiently distribute incoming network traffic across multip
 
 You can enable and observe this as follows:
 
-*   Increase the [number](https://aws.github.io/copilot-cli/docs/manifest/lb-web-service/#count) of _TMS API service_ instances to **2** in `copilot/content/manifest.yml`. 
+*   Increase the [number](https://aws.github.io/copilot-cli/docs/manifest/lb-web-service/#count) of _TMS API service_ instances to **2** in `copilot/api/manifest.yml`. 
 
-*   In the `services/api` folder, add a route (POST) `/toggle-health` in `src/routes.js` that toggle between healthy and unhealthy. Also replace the existing healthcheck endpoint with the code below.
+*   In the `services/api` folder, add a route (POST) `/toggle-health` in `src/routes.js` that toggles between healthy and unhealthy. Also replace the existing healthcheck endpoint with the code below.
 
         let isHealthy = true;
         let healthTimeout;
